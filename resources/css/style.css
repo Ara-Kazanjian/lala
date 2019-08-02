@@ -17,6 +17,9 @@ html{
     max-width: 1530px;
     margin: 0 auto;
 }
+section{
+    padding: 100px 0;
+}
 
 
 /* ----------------- */
@@ -28,6 +31,46 @@ h1{
     margin-bottom: 40px;
     word-spacing: 5px;
 }
+h2{
+    font-size: 180%;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2::after{
+    display: block;
+    content:'';
+    width: 200px;
+    height: 3px;
+    background-color:#10ac84;
+    margin: 40px auto;
+}
+h3{
+    font-size: 110%;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+
+/* ----------------- */
+/* Paragraphs */
+/* ----------------- */
+.section-up-text{
+    line-height: 145%;
+    text-align: center;
+    width: 800px;
+    margin: 0 auto 80px auto;
+}
+
+.card p{
+    font-size: 90%;
+    line-height:1.5;
+    width: 80%;
+    text-align: justify;
+}
+
+
+
 
 /*--------------------*/
 /* ----------------- */
@@ -79,12 +122,16 @@ header{
     left:60%;
     transform: translate(-50%,50%);
 }
+nav{
+    position: relative;
+}
 .logo{
+    display: block;
     width: 50px;
     height: auto;
     position: absolute;
     top: 20px;
-    right: 120px
+    right: 9px
     
 }
 .main-nav{
@@ -108,4 +155,23 @@ header{
 .main-nav li:hover,.main-nav li:active{
     border-bottom :3px solid #10ac84;
     
+}
+
+
+/* ----------------- */
+/* Section featres */
+/* ----------------- */
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 21%;
+    
+}
+.card ion-icon{
+    width: 60px;
+    height: 60px;
+    fill:#10ac84;
+    margin-bottom: 15px;
 }
